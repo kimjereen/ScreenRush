@@ -9,7 +9,7 @@ Admin: 		admin@email.com		admin
 
 
 Installation:
-    1. Clone the repository: `git clone https://github.com/yourusername/ScreenRush.git`
+    1. Clone the repository: `git clone https://github.com/kimjereen/ScreenRush.git`
     2. Save the file at your Xampp htdocs
     3. Set up the database using the provided SQL file: database_setup.sql
     4. Configure the database connection in the config.php file.

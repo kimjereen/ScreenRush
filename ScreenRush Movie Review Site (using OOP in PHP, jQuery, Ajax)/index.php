@@ -1,4 +1,23 @@
 <?php include('./header.php'); ?>
+<?php 
+    include_once './database/dbconfig.php'; 
+    $db = new DB();
+
+    if(isset($_SESSION['user_id'])) {
+        $loggedUser = $_SESSION['login'];
+        
+    } else {
+        $_SESSION['login'] = "GUEST";
+        $loggedUser = $_SESSION['login'];
+    }
+
+
+    if ($loggedUser !== 'GUEST') {
+        $goTo = './profile.php';
+    } else {
+        $goTo = './signin.php'; 
+    }
+?>
 
     <main>
     <article>
@@ -114,7 +133,7 @@
             </figure>
 
             <!-- href should go to login/signup page -->
-            <a href="./assets/images/service-banner.png" class="service-btn" >
+            <a href="<?php echo $goTo; ?>" class="service-btn" >
                 <span>Get Started  </span>
             </a>
         </div>

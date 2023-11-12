@@ -458,6 +458,9 @@
                     });
 
                     $('#topRated').html(mList);
+                    $('#movieList').html(mList); 
+                    $('#newRelease').html(mList); 
+                    $('#newUpcoming').html(mList);
                 },
                 error: function(error) {
                     console.error("AJAX error:", status, error);

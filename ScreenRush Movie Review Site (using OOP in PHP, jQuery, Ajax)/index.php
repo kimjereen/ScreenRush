@@ -48,11 +48,12 @@
 
             </div>
 
-            <button class="btn btn-primary">
-            <ion-icon name="play"></ion-icon>
-
-            <span>Watch now</span>
-            </button>
+            <a href="https://www.youtube.com/watch?v=yVucSRLLeIM&t=4s&pp=ygUYdHJhaW4gdG8gYnVzYW4gMiB0cmFpbGVy" target="_blank">
+                <button class="btn btn-primary">
+                    <ion-icon name="play"></ion-icon>
+                    <span>Watch now</span>
+                </button>
+            </a>
 
         </div>
 
